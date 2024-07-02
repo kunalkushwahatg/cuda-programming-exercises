@@ -15,7 +15,7 @@ block1 reads 0 -> block2 reads 0 -> block1 computes sum = 0+1 -> block2 computes
 /*
 ATOMIC OPERATIONS : atomic operations are operations that are executed as a single unit of 
                     work without the possibility of interruption. It ensures that read commpute and write are executed
-                    at sime sime without any interruption of other blocks.
+                    at sime sime withocut any interruption of other blocks.
 
 atomicAdd : atomicAdd is a function that adds the value of the second argument to the value pointed by the first argument
             and stores the result in the first argument
