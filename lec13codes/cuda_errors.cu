@@ -64,6 +64,11 @@ run code : nvcc -G -lineinfo -o my_cuda_app my_cuda_app.cu
 run profiler : nvprof ./my_cuda_app
 advance profiling : nnvprof --print-gpu-trace ./my_cuda_app
 
+The NSight Systems (nsys) profiler is a performance analysis tool developed by NVIDIA.
+It is designed to provide comprehensive profiling capabilities for applications running on NVIDIA GPUs, including detailed insights into both CPU and GPU performance.
+The primary purpose of NSight Systems is to help developers understand and optimize the performance of their applications by identifying bottlenecks, inefficiencies, and areas for improvement.
+
+https://docs.nvidia.com/nsight-compute/NsightCompute/index.html#:~:text=NVIDIA%20Nsight%20Compute%20is%20an,compare%20results%20within%20the%20tool.
 
 you can profile part of code and also save the profile data in a file csv
 
@@ -87,5 +92,4 @@ int main(){
     cudaDeviceSynchronize();
     return 0;
 }
-
 
